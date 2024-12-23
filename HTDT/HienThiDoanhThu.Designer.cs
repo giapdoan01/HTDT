@@ -44,7 +44,6 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(408, 375);
             this.dataGridView2.TabIndex = 0;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // btnNgay
             // 
@@ -78,11 +77,14 @@
             // 
             // HienThiDoanhThu
             // 
-            this.ClientSize = new System.Drawing.Size(861, 538);
+            this.BackgroundImage = global::HTDT.Properties.Resources.anhnen1_01;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(846, 566);
             this.Controls.Add(this.btnNam);
             this.Controls.Add(this.btnThang);
             this.Controls.Add(this.btnNgay);
             this.Controls.Add(this.dataGridView2);
+            this.DoubleBuffered = true;
             this.Name = "HienThiDoanhThu";
             this.Load += new System.EventHandler(this.HienThiDoanhThu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

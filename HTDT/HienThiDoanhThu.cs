@@ -20,11 +20,6 @@ namespace HTDT
 
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnNgay_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(sCon);
